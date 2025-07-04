@@ -14,6 +14,13 @@ const Navigation = ({ currentView, setCurrentView }) => {
             단체주문 메뉴
           </button>
           <button 
+            className={`nav-btn ${currentView === 'dessert' ? 'active' : ''}`}
+            onClick={() => setCurrentView('dessert')}
+          >
+            <i className="fas fa-birthday-cake"></i>
+            디저트 커스터마이징
+          </button>
+          <button 
             className={`nav-btn ${currentView === 'history' ? 'active' : ''}`}
             onClick={() => setCurrentView('history')}
           >

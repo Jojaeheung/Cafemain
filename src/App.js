@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Navigation from './components/Navigation';
 import GroupOrderMenu from './components/GroupOrderMenu';
 import OrderHistory from './components/OrderHistory';
+import DessertCustomizer from './components/DessertCustomizer';
 import Footer from './components/Footer';
 import './styles/App.css';
 
@@ -18,6 +19,7 @@ function App() {
       <main className="main-content">
         {currentView === 'menu' && <GroupOrderMenu />}
         {currentView === 'history' && <OrderHistory />}
+        {currentView === 'dessert' && <DessertCustomizer />}
       </main>
       
       <Footer />
